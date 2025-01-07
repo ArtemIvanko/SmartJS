@@ -9,10 +9,10 @@ export const Navigation = () => {
     <NavigationContainer>
       <NavigationContent>
         <NavigationItem>
-          <div>
+          <IconContainer>
             <LanguageIcon />
             EN
-          </div>
+          </IconContainer>
           <Divider orientation="vertical" flexItem />
           <LogoContainer>
             <LogoNameContainer>
@@ -50,6 +50,13 @@ const NavigationContent = styled("div")({
 const NavigationItem = styled("div")({
   display: "flex",
   gap: "0.5rem",
+  alignItems: "center",
+});
+
+const IconContainer = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  padding: "0 0.25rem",
   alignItems: "center",
 });
 
