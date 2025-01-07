@@ -1,19 +1,31 @@
 import { Divider, Typography } from "@mui/material";
 import JSLogo from "@assets/images/js-logo.webp";
+import LanguageIcon from "@mui/icons-material/Language";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 import styled from "@/DefaultTheme";
 
 export const Navigation = () => {
   return (
     <NavigationContainer>
-      <LogoContainer>
-        <LogoNameContainer>
-          <Typography variant="h4">Creative</Typography>
-          <Typography variant="caption">JavaScript</Typography>
-        </LogoNameContainer>
-        <LogoImageContainer>
-          <LogoImage src={JSLogo} alt="JS Logo" />
-        </LogoImageContainer>
-      </LogoContainer>
+      <NavigationContent>
+        <NavigationItem>
+          <div>
+            <LanguageIcon />
+            EN
+          </div>
+          <Divider orientation="vertical" flexItem />
+          <LogoContainer>
+            <LogoNameContainer>
+              <Typography variant="h4">Creative</Typography>
+              <Typography variant="caption">JavaScript</Typography>
+            </LogoNameContainer>
+            <LogoImageContainer>
+              <LogoImage src={JSLogo} alt="JS Logo" />
+            </LogoImageContainer>
+          </LogoContainer>
+        </NavigationItem>
+        <DarkModeIcon />
+      </NavigationContent>
       <Divider />
     </NavigationContainer>
   );
@@ -27,6 +39,20 @@ const NavigationContainer = styled("div")(({ theme }) => ({
   color: theme.palette.secondary.main,
 }));
 
+const NavigationContent = styled("div")({
+  display: "flex",
+  width: "100%",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "0.25rem 1rem",
+});
+
+const NavigationItem = styled("div")({
+  display: "flex",
+  gap: "0.5rem",
+  alignItems: "center",
+});
+
 const LogoNameContainer = styled("div")({
   display: "flex",
   flexDirection: "column",
@@ -36,7 +62,6 @@ const LogoContainer = styled("div")({
   display: "flex",
   alignItems: "center",
   gap: "0.25rem",
-  padding: "0.25rem 1rem",
 });
 
 const LogoImageContainer = styled("div")({
