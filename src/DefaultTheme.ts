@@ -1,7 +1,7 @@
 import {
+  createBreakpoints,
   createStyled,
   MUIStyledCommonProps,
-  createBreakpoints,
 } from "@mui/system";
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
@@ -70,9 +70,9 @@ let defaultTheme = createTheme({
   typography: {
     fontFamily: FontFamily.Primary,
     h1: basicHeadingStyles,
-    h2: { fontWeight: 600 },
+    h2: basicHeadingStyles,
     h3: basicHeadingStyles,
-    h4: basicHeadingStyles,
+    h4: { fontWeight: 600 },
     h5: basicHeadingStyles,
     h6: basicHeadingStyles,
     subtitle1: {
