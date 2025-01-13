@@ -3,6 +3,7 @@ import JSLogo from "@assets/images/js-logo.webp";
 import LanguageIcon from "@mui/icons-material/Language";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import styled from "@/DefaultTheme";
+import { BRAND_NAME, BRAND_TAGLINE } from "@/common/constant";
 
 export const Navigation = () => {
   return (
@@ -16,8 +17,8 @@ export const Navigation = () => {
           <Divider orientation="vertical" flexItem />
           <LogoContainer>
             <LogoNameContainer>
-              <Typography variant="h4">Creative</Typography>
-              <Typography variant="caption">JavaScript</Typography>
+              <Typography variant="h4">{BRAND_NAME}</Typography>
+              <Typography variant="caption">{BRAND_TAGLINE}</Typography>
             </LogoNameContainer>
             <LogoImageContainer>
               <LogoImage src={JSLogo} alt="JS Logo" />
