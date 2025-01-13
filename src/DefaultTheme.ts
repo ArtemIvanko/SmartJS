@@ -36,14 +36,14 @@ let defaultTheme = createTheme({
   palette: {
     primary: {
       main: "#1E1E1E",
-      light: "#0070F3",
+      light: "whitesmoke",
       dark: "#004DA7",
       logo: "#FF5733",
       bg: "#EAEAEA",
     },
     secondary: {
       main: "#FAFAFA",
-      light: "#A9F1E3",
+      light: "cornsilk",
       dark: "#8BC6BB",
       bg: "#999999",
     },
