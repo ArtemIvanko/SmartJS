@@ -1,5 +1,6 @@
 import styled from "@/DefaultTheme";
 import { Typography } from "@mui/material";
+import { TopicsList } from "@shared/TopicsList";
 
 export const Home = () => {
   return (
@@ -14,7 +15,7 @@ export const Home = () => {
           </Typography>
         </SubContent>
       </HomeMenu>
-      <Content>123</Content>
+      <TopicsList />
     </Root>
   );
 };
@@ -34,12 +35,6 @@ const HomeMenu = styled("div")(({ theme }) => ({
   height: "20rem",
   width: "100%",
   background: theme.palette.secondary.light,
-}));
-
-const Content = styled("div")(({ theme }) => ({
-  background: theme.palette.primary.light,
-  width: "100%",
-  height: "100%",
 }));
 
 const SubContent = styled("div")({
