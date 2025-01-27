@@ -97,7 +97,6 @@ let defaultTheme = createTheme({
       fontSize: "0.5rem",
       fontWeight: 200,
       letterSpacing: "0.5rem",
-      textAlign: "center",
     },
   },
   components: {
