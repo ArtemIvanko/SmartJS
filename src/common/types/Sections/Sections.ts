@@ -354,7 +354,19 @@ export const SECTIONS = [
       {
         id: "tab-2",
         intro: "Introduction into Events",
-        links: [],
+        links: [
+          {
+            href: "#introduction-browser-events",
+            label: "Introduction to browser events",
+          },
+          { href: "#bubbling-and-capturing", label: "Bubbling and capturing" },
+          { href: "#event-delegation", label: "Event delegation" },
+          {
+            href: "#browser-default-actions",
+            label: "Browser default actions",
+          },
+          { href: "#dispatching-events", label: "Dispatching custom events" },
+        ],
       },
       {
         id: "tab-3",
