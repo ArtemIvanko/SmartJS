@@ -279,7 +279,20 @@ export const SECTIONS = [
       {
         id: "tab-13",
         intro: "Modules",
-        links: [],
+        links: [
+          {
+            href: "#modules-intro",
+            label: "Modules, introduction",
+          },
+          {
+            href: "#export-import",
+            label: "Export and Import",
+          },
+          {
+            href: "#dynamic-import",
+            label: "Dynamic import",
+          },
+        ],
       },
       {
         id: "tab-14",
