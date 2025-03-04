@@ -64,7 +64,22 @@ export const SECTIONS = [
       {
         id: "tab-4",
         intro: "Object: The Basics",
-        links: [],
+        links: [
+          { href: "#object", label: "Objects" },
+          { href: "#object-copy", label: "Object references and copying" },
+          {
+            href: "#garbage-collection",
+            label: "Garbage collection",
+          },
+          { href: "#object-methods", label: "Object methods, 'this'" },
+          { href: "#constructor-new", label: "Constructor, operator 'new'" },
+          { href: "#optional-chaining", label: "Optional chaining '?.'" },
+          { href: "#symbol", label: "Symbol type" },
+          {
+            href: "#object-to-primitive",
+            label: "Object to primitive conversion",
+          },
+        ],
       },
       {
         id: "tab-5",
