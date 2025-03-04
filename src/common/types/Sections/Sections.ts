@@ -146,7 +146,13 @@ export const SECTIONS = [
       {
         id: "tab-7",
         intro: "Object properties configuration",
-        links: [],
+        links: [
+          { href: "#property-flag", label: "Property flags and descriptors" },
+          {
+            href: "#property-accessors",
+            label: "Property getters and setters",
+          },
+        ],
       },
       {
         id: "tab-8",
