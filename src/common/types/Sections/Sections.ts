@@ -227,7 +227,40 @@ export const SECTIONS = [
       {
         id: "tab-11",
         intro: "Promises, async/await",
-        links: [],
+        links: [
+          {
+            href: "#callbacks",
+            label: "Introduction: callbacks",
+          },
+          {
+            href: "#promise",
+            label: "Promises",
+          },
+          {
+            href: "#promise-chaining",
+            label: "Chaining",
+          },
+          {
+            href: "#promise-error-handling",
+            label: "Error handling with promises",
+          },
+          {
+            href: "#promise-api",
+            label: "Promise API",
+          },
+          {
+            href: "#promisify",
+            label: "Promisification",
+          },
+          {
+            href: "#microtask-queue",
+            label: "Microtasks",
+          },
+          {
+            href: "#async-await",
+            label: "Async/await",
+          },
+        ],
       },
       {
         id: "tab-12",
