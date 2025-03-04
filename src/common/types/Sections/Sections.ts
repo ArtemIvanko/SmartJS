@@ -84,7 +84,26 @@ export const SECTIONS = [
       {
         id: "tab-5",
         intro: "Data types",
-        links: [],
+        links: [
+          { href: "#primitives-methods", label: "Methods of primitives" },
+          { href: "#numbers", label: "Numbers" },
+          { href: "#strings", label: "Strings" },
+          { href: "#arrays", label: "Arrays" },
+          { href: "#array-methods", label: "Array methods" },
+          { href: "#iterables", label: "Iterables" },
+          { href: "#map-set", label: "Map and Set" },
+          { href: "#weakmap-weakset", label: "WeakMap and WeakSet" },
+          {
+            href: "#keys-values-entries",
+            label: "Object.keys, values, entries",
+          },
+          {
+            href: "#destructuring-assignment",
+            label: "Destructuring assignment",
+          },
+          { href: "#date", label: "Date and time" },
+          { href: "#json", label: "JSON methods, toJSON" },
+        ],
       },
       {
         id: "tab-6",
