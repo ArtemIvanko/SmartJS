@@ -314,7 +314,7 @@ export const SECTIONS = [
         links: [],
       },
       {
-        id: "miscellaneous",
+        id: "tab-7",
         intro: "Miscellaneous",
         links: [],
       },
