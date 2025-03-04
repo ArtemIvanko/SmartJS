@@ -297,7 +297,24 @@ export const SECTIONS = [
       {
         id: "tab-14",
         intro: "Miscellaneous",
-        links: [],
+        links: [
+          { href: "#proxy", label: "Proxy and Reflect" },
+          {
+            href: "#eval",
+            label: "Eval: run a code string",
+          },
+          { href: "#currying-partials", label: "Currying" },
+          { href: "#reference-type", label: "Reference Type" },
+          {
+            href: "#bigint",
+            label: "BigInt",
+          },
+          { href: "#unicode", label: "Unicode, String internals" },
+          {
+            href: "#weakref-finalizationregistry",
+            label: "WeakRef and FinalizationRegistry",
+          },
+        ],
       },
     ],
   },
