@@ -371,7 +371,17 @@ export const SECTIONS = [
       {
         id: "tab-3",
         intro: "UI Events",
-        links: [],
+        links: [
+          { href: "#mouse-events-basics", label: "Mouse events basics" },
+          {
+            href: "#mousemove-mouseover-mouseout-mouseenter-mouseleave",
+            label: "Mousemove, mouseover/out, mouseenter/leave",
+          },
+          { href: "#drag-and-drop", label: "Drag'n'Drop" },
+          { href: "#pointer-events", label: "Pointer events" },
+          { href: "#keyboard-events", label: "Keyboard: keydown and keyup" },
+          { href: "#scroll-events", label: "Scrolling" },
+        ],
       },
       {
         id: "tab-4",
