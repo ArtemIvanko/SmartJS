@@ -157,7 +157,24 @@ export const SECTIONS = [
       {
         id: "tab-8",
         intro: "Prototypes, inheritance",
-        links: [],
+        links: [
+          {
+            href: "#prototype-inheritance",
+            label: "Prototypal inheritance",
+          },
+          {
+            href: "#function-prototype",
+            label: "F.prototype",
+          },
+          {
+            href: "#native-prototypes",
+            label: "Native prototypes",
+          },
+          {
+            href: "#prototype-methods",
+            label: "Prototype methods, objects without __proto__",
+          },
+        ],
       },
       {
         id: "tab-9",
