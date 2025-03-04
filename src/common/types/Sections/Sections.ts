@@ -265,7 +265,16 @@ export const SECTIONS = [
       {
         id: "tab-12",
         intro: "Generators, advanced iteration",
-        links: [],
+        links: [
+          {
+            href: "#generators",
+            label: "Generators",
+          },
+          {
+            href: "#async-iterators",
+            label: "Async iteration and generators",
+          },
+        ],
       },
       {
         id: "tab-13",
