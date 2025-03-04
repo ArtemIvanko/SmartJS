@@ -213,7 +213,16 @@ export const SECTIONS = [
       {
         id: "tab-10",
         intro: "Error handling",
-        links: [],
+        links: [
+          {
+            href: "#error-handling",
+            label: "Error handling, 'try..catch'",
+          },
+          {
+            href: "#custom-errors",
+            label: "Custom errors, extending Error",
+          },
+        ],
       },
       {
         id: "tab-11",
