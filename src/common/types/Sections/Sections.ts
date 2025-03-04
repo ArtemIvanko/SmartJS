@@ -108,7 +108,40 @@ export const SECTIONS = [
       {
         id: "tab-6",
         intro: "Advanced working with functions",
-        links: [],
+        links: [
+          { href: "#recursion", label: "Recursion and stack" },
+          {
+            href: "#rest-parameters-spread-syntax",
+            label: "Rest parameters and spread syntax",
+          },
+          { href: "#closure", label: "Variable scope, closure" },
+          {
+            href: "#the-old-var",
+            label: "The old 'var'",
+          },
+          { href: "#global-object", label: "Global object" },
+          {
+            href: "#function-object",
+            label: "Function object, NFE",
+          },
+          { href: "#new-function", label: "The 'new Function' syntax" },
+          {
+            href: "#settimeout-setinterval",
+            label: "Scheduling: setTimeout and setInterval",
+          },
+          {
+            href: "#call-apply-decorators",
+            label: "Decorators and forwarding, call/apply",
+          },
+          {
+            href: "#bind",
+            label: "Function binding",
+          },
+          {
+            href: "#arrow-functions",
+            label: "Arrow functions revisited",
+          },
+        ],
       },
       {
         id: "tab-7",
