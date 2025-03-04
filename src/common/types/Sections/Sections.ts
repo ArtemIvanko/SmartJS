@@ -179,7 +179,36 @@ export const SECTIONS = [
       {
         id: "tab-9",
         intro: "Classes",
-        links: [],
+        links: [
+          {
+            href: "#class",
+            label: "Class basic syntax",
+          },
+          {
+            href: "#class-inheritance",
+            label: "Class inheritance",
+          },
+          {
+            href: "#class-static",
+            label: "Static properties and methods",
+          },
+          {
+            href: "#class-private",
+            label: "Private and protected properties and methods",
+          },
+          {
+            href: "#class-extends",
+            label: "Extending built-in classes",
+          },
+          {
+            href: "#instanceof",
+            label: "Class checking: 'instanceof'",
+          },
+          {
+            href: "#class-mixins",
+            label: "Mixins",
+          },
+        ],
       },
       {
         id: "tab-10",
