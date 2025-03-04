@@ -325,7 +325,31 @@ export const SECTIONS = [
       {
         id: "tab-1",
         intro: "Document",
-        links: [],
+        links: [
+          { href: "#browser-environment", label: "Browser environment, specs" },
+          { href: "#dom-nodes", label: "DOM tree" },
+          { href: "#walking-the-dom", label: "Walking the DOM" },
+          {
+            href: "#searching-for-nodes",
+            label: "Searching: getElement*, querySelector*",
+          },
+          {
+            href: "#basic-dom-node-properties",
+            label: "Node properties: type, tag and contents",
+          },
+          {
+            href: "#dom-attributes-and-properties",
+            label: "Attributes and properties",
+          },
+          { href: "#modifying-document", label: "Modifying the document" },
+          { href: "#styles-and-classes", label: "Styles and classes" },
+          {
+            href: "#element-size-and-scrolling",
+            label: "Element size and scrolling",
+          },
+          { href: "#window-size-scroll", label: "Window sizes and scrolling" },
+          { href: "#coordinates", label: "Coordinates" },
+        ],
       },
       {
         id: "tab-2",
