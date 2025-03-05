@@ -533,7 +533,20 @@ export const SECTIONS = [
       {
         id: "tab-4",
         intro: "Storing data in the browser",
-        links: [],
+        links: [
+          {
+            href: "#cookies",
+            label: "Cookies, document.cookie",
+          },
+          {
+            href: "#storage",
+            label: "Local Storage, Session Storage",
+          },
+          {
+            href: "#indexeddb",
+            label: "IndexedDB",
+          },
+        ],
       },
       {
         id: "tab-5",
