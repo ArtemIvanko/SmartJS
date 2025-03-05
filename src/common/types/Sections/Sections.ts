@@ -478,7 +478,57 @@ export const SECTIONS = [
       {
         id: "tab-3",
         intro: "Network requests",
-        links: [],
+        links: [
+          {
+            href: "#fetch",
+            label: "Fetch",
+          },
+          {
+            href: "#formdata",
+            label: "FormData",
+          },
+          {
+            href: "#fetch-progress",
+            label: "Fetch: download progress",
+          },
+          {
+            href: "#fetch-abort",
+            label: "Fetch: aborting requests",
+          },
+          {
+            href: "#fetch-crossorigin",
+            label: "Fetch: Cross-Origin Requests",
+          },
+          {
+            href: "#fetch-api",
+            label: "Fetch: API",
+          },
+          {
+            href: "#url",
+            label: "URL objects",
+          },
+
+          {
+            href: "#xmlhttprequest",
+            label: "XMLHttpRequest",
+          },
+          {
+            href: "#resume-upload",
+            label: "Resumable file upload",
+          },
+          {
+            href: "#long-polling",
+            label: "Long polling",
+          },
+          {
+            href: "#websocket",
+            label: "WebSocket",
+          },
+          {
+            href: "#server-sent-events",
+            label: "Server-Sent Events",
+          },
+        ],
       },
       {
         id: "tab-4",
