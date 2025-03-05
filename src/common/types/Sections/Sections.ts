@@ -399,7 +399,17 @@ export const SECTIONS = [
       {
         id: "tab-5",
         intro: "Document and resource loading",
-        links: [],
+        links: [
+          {
+            href: "#loading",
+            label: "Loading: DOMContentLoaded, load, beforeunload, unload",
+          },
+          { href: "#resource-loading", label: "Scripts: async, defer" },
+          {
+            href: "#onload-onerror",
+            label: "Resource loading: onload and onerror",
+          },
+        ],
       },
       {
         id: "tab-6",
