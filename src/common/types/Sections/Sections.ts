@@ -438,7 +438,20 @@ export const SECTIONS = [
       {
         id: "tab-1",
         intro: "Frames and windows",
-        links: [],
+        links: [
+          {
+            href: "#popups-and-windows",
+            label: "Popups and window methods",
+          },
+          {
+            href: "#cross-window-communication",
+            label: "Cross-window communication",
+          },
+          {
+            href: "#clickjacking",
+            label: "The clickjacking attack",
+          },
+        ],
       },
       {
         id: "tab-2",
