@@ -456,7 +456,24 @@ export const SECTIONS = [
       {
         id: "tab-2",
         intro: "Binary data, files",
-        links: [],
+        links: [
+          {
+            href: "#arraybuffer-binary-arrays",
+            label: "ArrayBuffer, binary arrays",
+          },
+          {
+            href: "#text-decoder",
+            label: "TextDecoder and TextEncoder",
+          },
+          {
+            href: "#blob",
+            label: "Blob",
+          },
+          {
+            href: "#file",
+            label: "File and FileReader",
+          },
+        ],
       },
       {
         id: "tab-3",
