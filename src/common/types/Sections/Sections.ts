@@ -551,7 +551,20 @@ export const SECTIONS = [
       {
         id: "tab-5",
         intro: "Animation",
-        links: [],
+        links: [
+          {
+            href: "#bezier-curve",
+            label: "Bezier curve",
+          },
+          {
+            href: "#css-animations",
+            label: "CSS Animations",
+          },
+          {
+            href: "#js-animation",
+            label: "JavaScript animations",
+          },
+        ],
       },
       {
         id: "tab-6",
