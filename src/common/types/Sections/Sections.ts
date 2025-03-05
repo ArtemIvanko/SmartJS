@@ -414,7 +414,20 @@ export const SECTIONS = [
       {
         id: "tab-6",
         intro: "Miscellaneous",
-        links: [],
+        links: [
+          {
+            href: "mutation-observer",
+            label: "Mutation observer",
+          },
+          {
+            href: "#selection-range",
+            label: "Selection and Range",
+          },
+          {
+            href: "#event-loop",
+            label: "Event loop: microtasks and macrotasks",
+          },
+        ],
       },
     ],
   },
