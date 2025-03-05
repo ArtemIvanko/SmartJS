@@ -569,7 +569,36 @@ export const SECTIONS = [
       {
         id: "tab-6",
         intro: "Web components",
-        links: [],
+        links: [
+          {
+            href: "#webcomponents-intro",
+            label: "From the orbital height",
+          },
+          {
+            href: "#custom-elements",
+            label: "Custom elements",
+          },
+          {
+            href: "#shadow-dom",
+            label: "Shadow DOM",
+          },
+          {
+            href: "#templates",
+            label: "Templates",
+          },
+          {
+            href: "#slots-composition",
+            label: "Shadow DOM slots, composition",
+          },
+          {
+            href: "#shadow-dom-style",
+            label: "Shadow DOM styling",
+          },
+          {
+            href: "#shadow-dom-events",
+            label: "Shadow DOM and events",
+          },
+        ],
       },
       {
         id: "tab-7",
