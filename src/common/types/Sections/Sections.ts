@@ -386,7 +386,15 @@ export const SECTIONS = [
       {
         id: "tab-4",
         intro: "Forms, controls",
-        links: [],
+        links: [
+          {
+            href: "#form-elements",
+            label: "Form properties and methods",
+          },
+          { href: "#focus-blur", label: "Focus: focus/blur" },
+          { href: "#form-events", label: "Form events" },
+          { href: "#form-submit", label: "Form submission: event and method" },
+        ],
       },
       {
         id: "tab-5",
@@ -395,11 +403,6 @@ export const SECTIONS = [
       },
       {
         id: "tab-6",
-        intro: "Additional articles",
-        links: [],
-      },
-      {
-        id: "tab-7",
         intro: "Miscellaneous",
         links: [],
       },
