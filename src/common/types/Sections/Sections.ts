@@ -603,7 +603,72 @@ export const SECTIONS = [
       {
         id: "tab-7",
         intro: "Regular expressions",
-        links: [],
+        links: [
+          {
+            href: "#regexp-introduction",
+            label: "Patterns and flags",
+          },
+          {
+            href: "#regexp-character-classes",
+            label: "Character classes",
+          },
+          {
+            href: "#regexp-anchors",
+            label: "Anchors: string start ^ and end $",
+          },
+          {
+            href: "#regexp-multiline-mode",
+            label: "Multiline mode of anchors ^ $, flag '\m\'",
+          },
+          {
+            href: "#regexp-boundary",
+            label: "Word boundary: \\b",
+          },
+          {
+            href: "#regexp-escaping",
+            label: "Escaping, special characters",
+          },
+          {
+            href: "#regexp-character-sets-and-ranges",
+            label: "Sets and ranges [...]",
+          },
+          {
+            href: "#regexp-quantifiers",
+            label: "Quantifiers +, *, ? and {n}",
+          },
+          {
+            href: "#regexp-greedy-and-lazy",
+            label: "Greedy and lazy quantifiers",
+          },
+          {
+            href: "#regexp-groups",
+            label: "Capturing groups",
+          },
+          {
+            href: "#regexp-backreferences",
+            label: "Backreferences in pattern: \N and \k<name>",
+          },
+          {
+            href: "#regexp-alternation",
+            label: "Alternation (OR) |",
+          },
+          {
+            href: "#regexp-lookahead-lookbehind",
+            label: "Lookahead and lookbehind",
+          },
+          {
+            href: "#regexp-catastrophic-backtracking",
+            label: "Catastrophic backtracking",
+          },
+          {
+            href: "#regexp-sticky",
+            label: 'Sticky flag "y", searching at position',
+          },
+          {
+            href: "#regexp-methods",
+            label: "Methods of RegExp and String",
+          },
+        ],
       },
     ],
   },
