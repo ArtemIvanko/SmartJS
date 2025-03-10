@@ -13,7 +13,7 @@ export const Home = () => {
   return (
     <div>
       {isValidHash && Pages[location.hash] ? (
-        <div>Pages[location.hash]()</div>
+        <div>{Pages[location.hash]()}</div>
       ) : (
         <TopicsList />
       )}
