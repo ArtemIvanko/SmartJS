@@ -157,4 +157,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#cookies": () => <div>Cookies</div>,
   "#storage": () => <div>Storage</div>,
   "#indexeddb": () => <div>IndexedDB</div>,
+  "#bezier-curve": () => <div>Bezier Curve</div>,
+  "#css-animations": () => <div>CSS Animations</div>,
+  "#js-animation": () => <div>JavaScript Animations</div>,
 };
