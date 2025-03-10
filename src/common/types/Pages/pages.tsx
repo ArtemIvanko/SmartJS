@@ -167,4 +167,22 @@ export const Pages: Record<string, () => ReactNode> = {
   "#slots-composition": () => <div>Slots</div>,
   "#shadow-dom-style": () => <div>Shadow DOM Style</div>,
   "#shadow-dom-events": () => <div>Shadow DOM events</div>,
+  "#regexp-introduction": () => <div>Regular Expressions</div>,
+  "#regexp-character-classes": () => <div>Character Classes</div>,
+  "#regexp-anchors": () => <div>Anchors</div>,
+  "#regexp-multiline-mode": () => <div>Multiline Mode</div>,
+  "#regexp-boundary": () => <div>Word boundary: \b</div>,
+  "#regexp-escaping": () => <div>Escapes</div>,
+  "#regexp-character-sets-and-ranges": () => <div>Character Sets</div>,
+  "#regexp-quantifiers": () => <div>Quantifiers</div>,
+  "#regexp-greedy-and-lazy": () => <div>Greedy and Lazy</div>,
+  "#regexp-groups": () => <div>Groups and Capturing</div>,
+  "#regexp-backreferences": () => <div>Backreferences</div>,
+  "#regexp-lookahead-lookbehind": () => <div>Lookahead, Lookbehind</div>,
+  "#regexp-alternation": () => <div>Alternation (OR)</div>,
+  "#regexp-catastrophic-backtracking": () => (
+    <div>Catastrophic Backtracking</div>
+  ),
+  "#regexp-sticky": () => <div>Sticky Flag</div>,
+  "#regexp-methods": () => <div>RegExp Methods</div>,
 };
