@@ -5,7 +5,7 @@ import { StyledGlobalPage } from "@shared/utils";
 export const Intro = () => (
   <StyledGlobalPage>
     <div>
-      <Typography variant="h4">An Introduction to JavaScript</Typography>
+      <Typography variant="h3">An Introduction to JavaScript</Typography>
       <Typography>
         Let’s see what’s so special about JavaScript, what we can achieve with
         it, and what other technologies play well with it.
