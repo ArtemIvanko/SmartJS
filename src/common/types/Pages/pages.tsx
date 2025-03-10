@@ -29,4 +29,12 @@ export const Pages: Record<string, () => ReactNode> = {
   "#ninja-code": () => <div>Ninja Code</div>,
   "#testing-mocha": () => <div>Testing</div>,
   "#polyfills": () => <div>Polyfills</div>,
+  "#object": () => <div>Object Methods</div>,
+  "#object-copy": () => <div>Object References</div>,
+  "#garbage-collection": () => <div>Garbage Collection</div>,
+  "#object-methods": () => <div>Object Methods</div>,
+  "#constructor-new": () => <div>Constructor, Operator New</div>,
+  "#optional-chaining": () => <div>Optional Chaining</div>,
+  "#symbol": () => <div>Symbol Type</div>,
+  "#object-to-primitive": () => <div>Object to Primitive</div>,
 };
