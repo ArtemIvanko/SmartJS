@@ -1,38 +1,34 @@
 import styled from "@/DefaultTheme";
 import { Typography } from "@mui/material";
 import { Link } from "@shared/utils";
-import { TabSection } from "@shared/TopicsList";
 import { SECTIONS } from "@/common/types";
 
 export const NavigationPanel = () => (
   <Root>
     <NavigationLinks />
-    <NavSection>
-      {SECTIONS.map(({ id, intro, links }) => (
-        <NavItem key={id}>
-          <TabSection id={id} />
-          <Typography>{intro}</Typography>
-          <StyledList>
-            {links.map(({ href, label }) => (
-              <li key={label}>
-                <Link href={href}>
-                  <Typography variant="body2">{label}</Typography>
-                </Link>
-              </li>
-            ))}
-          </StyledList>
-        </NavItem>
-      ))}
-    </NavSection>
   </Root>
 );
 
 const NavigationLinks = () => (
   <div>
-    {SECTIONS.map(({ id, title }) => (
-      <Link key={id} href={`#${id}`}>
-        <Typography variant="overline">{title}</Typography>
-      </Link>
+    {SECTIONS.map(({ id, intro, tabs }) => (
+      <>
+        <Typography variant="overline">{intro}</Typography>
+        <ArticleList>
+          {tabs.map((tab) => (
+            <div key={tab.id}>
+              <Typography variant="subtitle2">{tab.intro}</Typography>
+              <LinksList>
+                {tab.links.map((link) => (
+                  <NavItem key={link.href}>
+                    <Link href={link.href}>{link.label}</Link>
+                  </NavItem>
+                ))}
+              </LinksList>
+            </div>
+          ))}
+        </ArticleList>
+      </>
     ))}
   </div>
 );
@@ -44,15 +40,6 @@ const Root = styled("div")({
   flexDirection: "column",
 });
 
-const NavSection = styled("div")({
-  display: "flex",
-  flexDirection: "column",
-  gap: "1rem",
-  width: "100%",
-  padding: "1rem",
-  background: "whitesmoke",
-});
-
 const NavItem = styled("div")({
   display: "flex",
   flexDirection: "column",
@@ -61,6 +48,10 @@ const NavItem = styled("div")({
   background: "lightgray",
 });
 
-const StyledList = styled("ul")({
+const ArticleList = styled("ul")({
+  columnCount: 1,
+});
+
+const LinksList = styled("ul")({
   columnCount: 3,
 });
