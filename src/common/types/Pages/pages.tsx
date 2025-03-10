@@ -85,4 +85,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#microtask-queue": () => <div>Microtask Queue</div>,
   "#generators": () => <div>Generators</div>,
   "#async-iterators": () => <div>Async Iterators</div>,
+  "#modules-intro": () => <div>Modules</div>,
+  "#export-import": () => <div>Export Import</div>,
+  "#dynamic-import": () => <div>Dynamic Imports</div>,
 };
