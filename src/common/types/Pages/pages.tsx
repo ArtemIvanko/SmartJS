@@ -97,4 +97,17 @@ export const Pages: Record<string, () => ReactNode> = {
   "#weakref-finalizationregistry": () => (
     <div>WeakRef, FinalizationRegistry</div>
   ),
+  "#browser-environment": () => <div>Browser Environment</div>,
+  "#dom-nodes": () => <div>DOM Nodes</div>,
+  "#walking-the-dom": () => <div>Walking the DOM</div>,
+  "#searching-for-nodes": () => <div>Searching for Nodes</div>,
+  "#basic-dom-node-properties": () => <div>Basic DOM Node Properties</div>,
+  "#dom-attributes-and-properties": () => (
+    <div>DOM Attributes and Properties</div>
+  ),
+  "#modifying-document": () => <div>Modifying the Document</div>,
+  "#element-size-and-scrolling": () => <div>Element Size and Scrolling</div>,
+  "#window-size-scroll": () => <div>Window Sizes and Scrolling</div>,
+  "#coordinates": () => <div>Coordinates</div>,
+  "#styles-and-classes": () => <div>Styles and Classes</div>,
 };
