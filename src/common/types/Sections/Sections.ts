@@ -21,7 +21,7 @@ export const SECTIONS = [
         intro: "JavaScript Fundamentals",
         links: [
           { href: "#hello-world", label: "Hello, World!" },
-          { href: "structure", label: "Code structure" },
+          { href: "#structure", label: "Code structure" },
           { href: "#strict-mode", label: "Strict mode" },
           { href: "#variables", label: "Variables" },
           { href: "#types", label: "Data types" },
@@ -39,7 +39,7 @@ export const SECTIONS = [
             label: "Nullish coalescing operator '??' ",
           },
           { href: "#while-for", label: "Loops: while and for" },
-          { href: "#swithc", label: "The 'switch' statement" },
+          { href: "#switch", label: "The 'switch' statement" },
           { href: "#function-basics", label: "Functions" },
           { href: "#function-expressions", label: "Function expressions" },
           {
