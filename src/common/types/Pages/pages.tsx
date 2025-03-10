@@ -60,4 +60,6 @@ export const Pages: Record<string, () => ReactNode> = {
   "#call-apply-decorators": () => <div>Call, Apply</div>,
   "#bind": () => <div>Bind</div>,
   "#arrow-functions": () => <div>Arrow Functions</div>,
+  "#property-flag": () => <div>Property Flags</div>,
+  "#property-accessors": () => <div>Property accessors</div>,
 };
