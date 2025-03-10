@@ -135,4 +135,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#mutation-observer": () => <div>Mutation Observer</div>,
   "#selection-range": () => <div>Selection and Range</div>,
   "#event-loop": () => <div>Event Loop</div>,
+  "#popups-and-windows": () => <div>Popups and Windows</div>,
+  "#cross-window-communication": () => <div>Cross-Window Communication</div>,
+  "#clickjacking": () => <div>Clickjacking</div>,
 };
