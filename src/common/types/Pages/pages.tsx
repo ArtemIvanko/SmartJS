@@ -23,4 +23,10 @@ export const Pages: Record<string, () => ReactNode> = {
   "#function-expressions": () => <div>Function Expressions</div>,
   "#arrow-functions-basics": () => <div>Arrow Functions</div>,
   "#javascript-specials": () => <div>JavaScript Specials</div>,
+  "#debugging": () => <div>Debugging in Chrome</div>,
+  "#coding-style": () => <div>Coding Style</div>,
+  "#comments": () => <div>Comments</div>,
+  "#ninja-code": () => <div>Ninja Code</div>,
+  "#testing-mocha": () => <div>Testing</div>,
+  "#polyfills": () => <div>Polyfills</div>,
 };
