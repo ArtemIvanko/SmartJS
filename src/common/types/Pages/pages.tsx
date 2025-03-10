@@ -138,4 +138,8 @@ export const Pages: Record<string, () => ReactNode> = {
   "#popups-and-windows": () => <div>Popups and Windows</div>,
   "#cross-window-communication": () => <div>Cross-Window Communication</div>,
   "#clickjacking": () => <div>Clickjacking</div>,
+  "#arraybuffer-binary-arrays": () => <div>ArrayBuffer, Binary Arrays</div>,
+  "#text-decoder": () => <div>Text Decoding</div>,
+  "#blob": () => <div>Blob</div>,
+  "#file": () => <div>File</div>,
 };
