@@ -73,4 +73,6 @@ export const Pages: Record<string, () => ReactNode> = {
   "#class-extends": () => <div>Class Extending</div>,
   "#instanceof": () => <div>Instanceof</div>,
   "#class-mixins": () => <div>Class Mixins</div>,
+  "#error-handling": () => <div>Error Handling</div>,
+  "#custom-errors": () => <div>Custom Errors</div>,
 };
