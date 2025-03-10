@@ -5,6 +5,16 @@ import { NavigationPanel } from "@shared/utils";
 export const TopicsList = () => {
   return (
     <Content>
+      <HomeMenu>
+        <Typography variant="h2">JavaScript</Typography>
+        <Typography>The Modern JavaScript Tutorial</Typography>
+        <SubContent>
+          <Typography variant="subtitle1">
+            The modern JavaScript course for everyone! Master JavaScript with
+            projects, challenges, and theory. Many courses in one!
+          </Typography>
+        </SubContent>
+      </HomeMenu>
       <Typography variant="h5">
         How it's done now. From the basics to advanced topics with simple, but
         detailed explanations.
@@ -19,6 +29,23 @@ export const TopicsList = () => {
     </Content>
   );
 };
+
+const HomeMenu = styled("div")(({ theme }) => ({
+  position: "relative",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection: "column",
+  height: "20rem",
+  width: "100%",
+  background: theme.palette.secondary.light,
+}));
+
+const SubContent = styled("div")({
+  width: "300px",
+  textAlign: "end",
+  textTransform: "uppercase",
+});
 
 const Content = styled("div")(({ theme }) => ({
   display: "flex",
