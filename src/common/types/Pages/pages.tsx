@@ -75,4 +75,12 @@ export const Pages: Record<string, () => ReactNode> = {
   "#class-mixins": () => <div>Class Mixins</div>,
   "#error-handling": () => <div>Error Handling</div>,
   "#custom-errors": () => <div>Custom Errors</div>,
+  "#callbacks": () => <div>Callbacks</div>,
+  "#promise": () => <div>Promises</div>,
+  "#promise-chaining": () => <div>Promise Chaining</div>,
+  "#promise-error-handling": () => <div>Promise Error Handling</div>,
+  "#promise-api": () => <div>Promise API</div>,
+  "#promisify": () => <div>Promisification</div>,
+  "#async-await": () => <div>Async/Await</div>,
+  "#microtask-queue": () => <div>Microtask Queue</div>,
 };
