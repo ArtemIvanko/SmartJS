@@ -117,4 +117,12 @@ export const Pages: Record<string, () => ReactNode> = {
   "#browser-default-actions": () => <div>Browser Default Actions</div>,
   "#dispatching-events": () => <div>Dispatching Events</div>,
   "#event-delegation": () => <div>Event Delegation</div>,
+  "#mouse-events-basics": () => <div>Mouse Events</div>,
+  "#drag-and-drop": () => <div>Drag and Drop</div>,
+  "#pointer-events": () => <div>Pointer Events</div>,
+  "#keyboard-events": () => <div>Keyboard Events</div>,
+  "#scroll-events": () => <div>Scroll Events</div>,
+  "#mousemove-mouseover-mouseout-mouseenter-mouseleave": () => (
+    <div>Mouse Move, Over, Out, Enter, Leave</div>
+  ),
 };
