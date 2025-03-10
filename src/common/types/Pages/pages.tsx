@@ -83,4 +83,6 @@ export const Pages: Record<string, () => ReactNode> = {
   "#promisify": () => <div>Promisification</div>,
   "#async-await": () => <div>Async/Await</div>,
   "#microtask-queue": () => <div>Microtask Queue</div>,
+  "#generators": () => <div>Generators</div>,
+  "#async-iterators": () => <div>Async Iterators</div>,
 };
