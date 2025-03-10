@@ -62,4 +62,8 @@ export const Pages: Record<string, () => ReactNode> = {
   "#arrow-functions": () => <div>Arrow Functions</div>,
   "#property-flag": () => <div>Property Flags</div>,
   "#property-accessors": () => <div>Property accessors</div>,
+  "#prototype-inheritance": () => <div>Prototypes</div>,
+  "#function-prototype": () => <div>Functions Prototypes</div>,
+  "#native-prototypes": () => <div>Native Prototypes</div>,
+  "#prototype-methods": () => <div>Prototype Methods</div>,
 };
