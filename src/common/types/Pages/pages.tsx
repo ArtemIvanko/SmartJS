@@ -160,4 +160,11 @@ export const Pages: Record<string, () => ReactNode> = {
   "#bezier-curve": () => <div>Bezier Curve</div>,
   "#css-animations": () => <div>CSS Animations</div>,
   "#js-animation": () => <div>JavaScript Animations</div>,
+  "#webcomponents-intro": () => <div>Web Components</div>,
+  "#custom-elements": () => <div>Custom Elements</div>,
+  "#shadow-dom": () => <div>Shadow DOM</div>,
+  "#templates": () => <div>Templates</div>,
+  "#slots-composition": () => <div>Slots</div>,
+  "#shadow-dom-style": () => <div>Shadow DOM Style</div>,
+  "#shadow-dom-events": () => <div>Shadow DOM events</div>,
 };
