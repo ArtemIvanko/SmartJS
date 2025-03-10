@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
 import { Intro } from "@/pages/Intro";
 import { Manuals } from "@/pages/Manuals";
+import { CodeEditors } from "@/pages/CodeEditors";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
   "#manuals-specifications": () => <Manuals />,
-  "#code-editors": () => <div>Code Editors</div>,
+  "#code-editors": () => <CodeEditors />,
   "#devtools": () => <div>Developer Console</div>,
   "#hello-world": () => <div>Hello World</div>,
   "#structure": () => <div>Structure</div>,
