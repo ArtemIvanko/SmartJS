@@ -125,4 +125,8 @@ export const Pages: Record<string, () => ReactNode> = {
   "#mousemove-mouseover-mouseout-mouseenter-mouseleave": () => (
     <div>Mouse Move, Over, Out, Enter, Leave</div>
   ),
+  "#form-elements": () => <div>Form Elements</div>,
+  "#focus-blur": () => <div>Focus and Blur</div>,
+  "#form-events": () => <div>Form Events</div>,
+  "#form-submit": () => <div>Form Submit</div>,
 };
