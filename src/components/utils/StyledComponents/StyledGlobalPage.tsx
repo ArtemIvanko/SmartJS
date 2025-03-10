@@ -6,4 +6,5 @@ export const StyledGlobalPage = styled("div")({
   gap: "1rem",
   width: "100%",
   padding: "1rem",
+  overflowY: "scroll",
 });
