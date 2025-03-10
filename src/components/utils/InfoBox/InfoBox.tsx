@@ -1,10 +1,11 @@
 import { Tooltip, Typography } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
 import styled from "@/DefaultTheme";
+import { ReactNode } from "react";
 
 interface InfoBoxProps {
   title: string;
-  content: string;
+  content: string | ReactNode;
 }
 
 export const InfoBox = ({ title, content }: InfoBoxProps) => (
