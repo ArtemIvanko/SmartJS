@@ -2,12 +2,13 @@ import { ReactNode } from "react";
 import { Intro } from "@/pages/Intro";
 import { Manuals } from "@/pages/Manuals";
 import { CodeEditors } from "@/pages/CodeEditors";
+import { DevConsole } from "@/pages/DevConsole";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
   "#manuals-specifications": () => <Manuals />,
   "#code-editors": () => <CodeEditors />,
-  "#devtools": () => <div>Developer Console</div>,
+  "#devtools": () => <DevConsole />,
   "#hello-world": () => <div>Hello World</div>,
   "#structure": () => <div>Structure</div>,
   "#strict-mode": () => <div>Strict Mode</div>,
