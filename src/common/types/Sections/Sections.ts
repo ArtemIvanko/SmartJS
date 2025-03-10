@@ -416,7 +416,7 @@ export const SECTIONS = [
         intro: "Miscellaneous",
         links: [
           {
-            href: "mutation-observer",
+            href: "#mutation-observer",
             label: "Mutation observer",
           },
           {
