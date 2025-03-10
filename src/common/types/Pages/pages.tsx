@@ -110,4 +110,11 @@ export const Pages: Record<string, () => ReactNode> = {
   "#window-size-scroll": () => <div>Window Sizes and Scrolling</div>,
   "#coordinates": () => <div>Coordinates</div>,
   "#styles-and-classes": () => <div>Styles and Classes</div>,
+  "#introduction-browser-events": () => (
+    <div>Introduction to Browser Events</div>
+  ),
+  "#bubbling-and-capturing": () => <div>Bubbling and Capturing</div>,
+  "#browser-default-actions": () => <div>Browser Default Actions</div>,
+  "#dispatching-events": () => <div>Dispatching Events</div>,
+  "#event-delegation": () => <div>Event Delegation</div>,
 };
