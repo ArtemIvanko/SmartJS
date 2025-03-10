@@ -129,4 +129,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#focus-blur": () => <div>Focus and Blur</div>,
   "#form-events": () => <div>Form Events</div>,
   "#form-submit": () => <div>Form Submit</div>,
+  "#loading": () => <div>Loading Events</div>,
+  "#resource-loading": () => <div>Resource Load Events</div>,
+  "#onload-onerror": () => <div>OnLoad, OnError</div>,
 };
