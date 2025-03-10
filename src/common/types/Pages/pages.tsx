@@ -132,4 +132,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#loading": () => <div>Loading Events</div>,
   "#resource-loading": () => <div>Resource Load Events</div>,
   "#onload-onerror": () => <div>OnLoad, OnError</div>,
+  "#mutation-observer": () => <div>Mutation Observer</div>,
+  "#selection-range": () => <div>Selection and Range</div>,
+  "#event-loop": () => <div>Event Loop</div>,
 };
