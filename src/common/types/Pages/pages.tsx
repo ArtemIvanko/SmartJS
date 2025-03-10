@@ -154,4 +154,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#long-polling": () => <div>Long Polling</div>,
   "#websocket": () => <div>WebSocket</div>,
   "#server-sent-events": () => <div>Server-Sent Events</div>,
+  "#cookies": () => <div>Cookies</div>,
+  "#storage": () => <div>Storage</div>,
+  "#indexeddb": () => <div>IndexedDB</div>,
 };
