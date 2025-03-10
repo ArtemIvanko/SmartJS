@@ -66,4 +66,11 @@ export const Pages: Record<string, () => ReactNode> = {
   "#function-prototype": () => <div>Functions Prototypes</div>,
   "#native-prototypes": () => <div>Native Prototypes</div>,
   "#prototype-methods": () => <div>Prototype Methods</div>,
+  "#class": () => <div>Classes</div>,
+  "#class-inheritance": () => <div>Class Inheritance</div>,
+  "#class-static": () => <div>Class Static Properties</div>,
+  "#class-private": () => <div>Class Private Properties</div>,
+  "#class-extends": () => <div>Class Extending</div>,
+  "#instanceof": () => <div>Instanceof</div>,
+  "#class-mixins": () => <div>Class Mixins</div>,
 };
