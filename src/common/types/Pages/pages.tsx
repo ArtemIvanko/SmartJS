@@ -88,4 +88,13 @@ export const Pages: Record<string, () => ReactNode> = {
   "#modules-intro": () => <div>Modules</div>,
   "#export-import": () => <div>Export Import</div>,
   "#dynamic-import": () => <div>Dynamic Imports</div>,
+  "#proxy": () => <div>Proxy</div>,
+  "#eval": () => <div>Eval</div>,
+  "#currying-partials": () => <div>Currying, Partials</div>,
+  "#reference-type": () => <div>Reference Type</div>,
+  "#bigint": () => <div>BigInt</div>,
+  "#unicode": () => <div>Unicode</div>,
+  "#weakref-finalizationregistry": () => (
+    <div>WeakRef, FinalizationRegistry</div>
+  ),
 };
