@@ -23,6 +23,7 @@ const Root = styled("div")(({ theme }) => ({
   width: "100%",
   border: `1px solid ${theme.palette.divider}`,
   gap: "1rem",
+  margin: "1rem 0",
 }));
 
 const CodeContainer = styled("div")(({ theme }) => ({
