@@ -4,6 +4,7 @@ import { Manuals } from "@/pages/Manuals";
 import { CodeEditors } from "@/pages/CodeEditors";
 import { DevConsole } from "@/pages/DevConsole";
 import { HelloWorld } from "@/pages/HelloWorld";
+import { Structure } from "@/pages/Structure";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -11,7 +12,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#code-editors": () => <CodeEditors />,
   "#devtools": () => <DevConsole />,
   "#hello-world": () => <HelloWorld />,
-  "#structure": () => <div>Structure</div>,
+  "#structure": () => <Structure />,
   "#strict-mode": () => <div>Strict Mode</div>,
   "#variables": () => <div>Variables</div>,
   "#types": () => <div>Data Types</div>,
