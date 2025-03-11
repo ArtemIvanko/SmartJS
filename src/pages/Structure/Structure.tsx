@@ -22,8 +22,6 @@ export const Structure = () => (
         Statements can be separated with a semicolon. For example, here we split
         “Hello World” into two alerts:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -31,8 +29,6 @@ export const Structure = () => (
         Usually, statements are written on separate lines to make the code more
         readable:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -41,8 +37,6 @@ export const Structure = () => (
         A semicolon may be omitted in most cases when a line break exists. This
         would also work:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -55,22 +49,22 @@ export const Structure = () => (
         </strong>{" "}
         There are cases when a newline does not mean a semicolon. For example:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
-    <Typography>
-      The code outputs <Highlight>6</Highlight> because JavaScript does not
-      insert semicolons here. It is intuitively obvious that if the line ends
-      with a plus <Highlight>"+"</Highlight>, then it is an “incomplete
-      expression”, so a semicolon there would be incorrect. And in this case,
-      that works as intended.{" "}
-      <strong>
-        But there are situations where JavaScript “fails” to assume a semicolon
-        where it is really needed.
-      </strong>{" "}
-      Errors which occur in such cases are quite hard to find and fix.
-    </Typography>
+    <div>
+      <Typography>
+        The code outputs <Highlight>6</Highlight> because JavaScript does not
+        insert semicolons here. It is intuitively obvious that if the line ends
+        with a plus <Highlight>"+"</Highlight>, then it is an “incomplete
+        expression”, so a semicolon there would be incorrect. And in this case,
+        that works as intended.{" "}
+        <strong>
+          But there are situations where JavaScript “fails” to assume a
+          semicolon where it is really needed.
+        </strong>{" "}
+        Errors which occur in such cases are quite hard to find and fix.
+      </Typography>
+    </div>
     <div>
       <InfoBox
         title="An example of an error"
@@ -131,8 +125,6 @@ export const Structure = () => (
         <Highlight>//</Highlight>. The rest of the line is a comment. It may
         occupy a full line of its own or follow a statement. Like here:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -144,8 +136,6 @@ export const Structure = () => (
         </strong>
         Like this:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -154,8 +144,6 @@ export const Structure = () => (
         <Highlight>/* … */</Highlight>, it won’t execute. Sometimes it can be
         handy to temporarily disable a part of code:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>

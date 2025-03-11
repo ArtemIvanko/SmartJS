@@ -25,8 +25,6 @@ export const HelloWorld = () => (
         can be placed in the <Highlight>{"<head>"}</Highlight> section, or
         before the closing <Highlight>{"</body>"}</Highlight> tag. Like this:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -63,8 +61,6 @@ export const HelloWorld = () => (
         In really ancient books and guides, you may find comments inside{" "}
         <Highlight>{"<script>"}</Highlight> tags, like this:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -87,8 +83,6 @@ export const HelloWorld = () => (
         Script files are attached to HTML with the <Highlight>src</Highlight>{" "}
         attribute:
       </Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
@@ -100,14 +94,10 @@ export const HelloWorld = () => (
         "script.js" in the current folder.
       </Typography>
       <Typography>We can give a full URL as well. For instance:</Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
       <Typography>To attach several scripts, use multiple tags:</Typography>
-    </div>
-    <div>
       <IDEEmitter code="" />
     </div>
     <div>
