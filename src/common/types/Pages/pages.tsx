@@ -3,13 +3,14 @@ import { Intro } from "@/pages/Intro";
 import { Manuals } from "@/pages/Manuals";
 import { CodeEditors } from "@/pages/CodeEditors";
 import { DevConsole } from "@/pages/DevConsole";
+import { HelloWorld } from "@/pages/HelloWorld";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
   "#manuals-specifications": () => <Manuals />,
   "#code-editors": () => <CodeEditors />,
   "#devtools": () => <DevConsole />,
-  "#hello-world": () => <div>Hello World</div>,
+  "#hello-world": () => <HelloWorld />,
   "#structure": () => <div>Structure</div>,
   "#strict-mode": () => <div>Strict Mode</div>,
   "#variables": () => <div>Variables</div>,
