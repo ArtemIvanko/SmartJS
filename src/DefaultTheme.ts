@@ -65,7 +65,7 @@ let defaultTheme = createTheme({
     background: {
       default: "#FAFAFA",
     },
-    divider: "#A0A9AA",
+    divider: "#efefef",
   },
   typography: {
     fontFamily: FontFamily.Primary,
