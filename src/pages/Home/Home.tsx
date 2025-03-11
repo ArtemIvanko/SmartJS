@@ -29,4 +29,5 @@ const Root = styled("div")({
   gap: "2rem",
   width: "100%",
   height: "100vh",
+  paddingBottom: "5rem",
 });
