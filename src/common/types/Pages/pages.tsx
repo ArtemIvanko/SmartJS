@@ -6,6 +6,7 @@ import { DevConsole } from "@/pages/DevConsole";
 import { HelloWorld } from "@/pages/HelloWorld";
 import { Structure } from "@/pages/Structure";
 import { StrictMode } from "@/pages/StrictMode";
+import { Variables } from "@/pages/Variables";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -15,7 +16,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#hello-world": () => <HelloWorld />,
   "#structure": () => <Structure />,
   "#strict-mode": () => <StrictMode />,
-  "#variables": () => <div>Variables</div>,
+  "#variables": () => <Variables />,
   "#types": () => <div>Data Types</div>,
   "#alert-prompt-confirm": () => <div>Alert, Prompt, Confirm</div>,
   "#type-conversions": () => <div>Type Conversions</div>,
