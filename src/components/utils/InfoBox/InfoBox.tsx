@@ -1,18 +1,23 @@
 import { Tooltip, Typography } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
+import WarningIcon from "@mui/icons-material/Warning";
 import styled from "@/DefaultTheme";
 import { ReactNode } from "react";
 
 interface InfoBoxProps {
   title: string;
   content: string | ReactNode;
+  isImportant?: boolean;
 }
 
-export const InfoBox = ({ title, content }: InfoBoxProps) => (
+export const InfoBox = ({ title, content, isImportant }: InfoBoxProps) => (
   <Root>
     <Typography variant="h5">
       <TitleBox>
-        <Tooltip title={title} children={<InfoIcon />} />
+        <Tooltip
+          title={title}
+          children={isImportant ? <WarningIcon /> : <InfoIcon />}
+        />
         {title}
       </TitleBox>
     </Typography>
