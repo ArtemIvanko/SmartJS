@@ -5,6 +5,7 @@ import { CodeEditors } from "@/pages/CodeEditors";
 import { DevConsole } from "@/pages/DevConsole";
 import { HelloWorld } from "@/pages/HelloWorld";
 import { Structure } from "@/pages/Structure";
+import { StrictMode } from "@/pages/StrictMode";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -13,7 +14,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#devtools": () => <DevConsole />,
   "#hello-world": () => <HelloWorld />,
   "#structure": () => <Structure />,
-  "#strict-mode": () => <div>Strict Mode</div>,
+  "#strict-mode": () => <StrictMode />,
   "#variables": () => <div>Variables</div>,
   "#types": () => <div>Data Types</div>,
   "#alert-prompt-confirm": () => <div>Alert, Prompt, Confirm</div>,
