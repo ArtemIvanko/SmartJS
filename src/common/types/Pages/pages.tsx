@@ -9,6 +9,7 @@ import { StrictMode } from "@/pages/StrictMode";
 import { Variables } from "@/pages/Variables";
 import { DataTypes } from "@/pages/DataTypes";
 import { Integration_APC } from "@/pages/Integration_APC";
+import { TypeConversion } from "@/pages/TypeConversion";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -21,7 +22,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#variables": () => <Variables />,
   "#types": () => <DataTypes />,
   "#alert-prompt-confirm": () => <Integration_APC />,
-  "#type-conversions": () => <div>Type Conversions</div>,
+  "#type-conversions": () => <TypeConversion />,
   "#operators": () => <div>Operators</div>,
   "#comparison": () => <div>Comparisons</div>,
   "#ifelse": () => <div>If Else</div>,
