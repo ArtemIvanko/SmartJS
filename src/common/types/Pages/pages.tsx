@@ -10,6 +10,7 @@ import { Variables } from "@/pages/Variables";
 import { DataTypes } from "@/pages/DataTypes";
 import { Integration_APC } from "@/pages/Integration_APC";
 import { TypeConversion } from "@/pages/TypeConversion";
+import { Operators } from "@/pages/Operators";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -23,7 +24,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#types": () => <DataTypes />,
   "#alert-prompt-confirm": () => <Integration_APC />,
   "#type-conversions": () => <TypeConversion />,
-  "#operators": () => <div>Operators</div>,
+  "#operators": () => <Operators />,
   "#comparison": () => <div>Comparisons</div>,
   "#ifelse": () => <div>If Else</div>,
   "#logical-operators": () => <div>Logical Operators</div>,
