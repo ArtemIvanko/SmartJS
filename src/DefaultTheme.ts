@@ -1,7 +1,7 @@
 import {
+  createBreakpoints,
   createStyled,
   MUIStyledCommonProps,
-  createBreakpoints,
 } from "@mui/system";
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
@@ -36,14 +36,14 @@ let defaultTheme = createTheme({
   palette: {
     primary: {
       main: "#1E1E1E",
-      light: "#0070F3",
+      light: "whitesmoke",
       dark: "#004DA7",
       logo: "#FF5733",
       bg: "#EAEAEA",
     },
     secondary: {
       main: "#FAFAFA",
-      light: "#A9F1E3",
+      light: "cornsilk",
       dark: "#8BC6BB",
       bg: "#999999",
     },
@@ -65,14 +65,14 @@ let defaultTheme = createTheme({
     background: {
       default: "#FAFAFA",
     },
-    divider: "#A0A9AA",
+    divider: "#efefef",
   },
   typography: {
     fontFamily: FontFamily.Primary,
     h1: basicHeadingStyles,
-    h2: { fontWeight: 600 },
+    h2: basicHeadingStyles,
     h3: basicHeadingStyles,
-    h4: basicHeadingStyles,
+    h4: { fontWeight: 600 },
     h5: basicHeadingStyles,
     h6: basicHeadingStyles,
     subtitle1: {
@@ -97,7 +97,6 @@ let defaultTheme = createTheme({
       fontSize: "0.5rem",
       fontWeight: 200,
       letterSpacing: "0.5rem",
-      textAlign: "center",
     },
   },
   components: {
