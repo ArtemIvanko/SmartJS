@@ -4,6 +4,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import styled from "@/DefaultTheme";
 import { BRAND_NAME, BRAND_TAGLINE } from "@/common/constant";
+import { Link } from "@shared/utils";
 
 export const Navigation = () => {
   return (
@@ -16,18 +17,19 @@ export const Navigation = () => {
           </IconContainer>
           <Divider orientation="vertical" flexItem />
           <LogoContainer>
-            <LogoNameContainer>
-              <Typography variant="h4">{BRAND_NAME}</Typography>
-              <Typography variant="caption">{BRAND_TAGLINE}</Typography>
-            </LogoNameContainer>
-            <LogoImageContainer>
-              <LogoImage src={JSLogo} alt="JS Logo" />
-            </LogoImageContainer>
+            <Link href={"/"}>
+              <LogoNameContainer>
+                <Typography variant="h4">{BRAND_NAME}</Typography>
+                <Typography variant="caption">{BRAND_TAGLINE}</Typography>
+              </LogoNameContainer>
+              <LogoImageContainer>
+                <LogoImage src={JSLogo} alt="JS Logo" />
+              </LogoImageContainer>
+            </Link>
           </LogoContainer>
         </NavigationItem>
         <DarkModeIcon />
       </NavigationContent>
-      <Divider />
     </NavigationContainer>
   );
 };
@@ -36,8 +38,6 @@ const NavigationContainer = styled("div")(({ theme }) => ({
   display: "flex",
   width: "100%",
   flexDirection: "column",
-  background: theme.palette.primary.main,
-  color: theme.palette.secondary.main,
 }));
 
 const NavigationContent = styled("div")({

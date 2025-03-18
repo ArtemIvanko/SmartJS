@@ -65,7 +65,7 @@ let defaultTheme = createTheme({
     background: {
       default: "#FAFAFA",
     },
-    divider: "#A0A9AA",
+    divider: "#efefef",
   },
   typography: {
     fontFamily: FontFamily.Primary,
@@ -97,7 +97,6 @@ let defaultTheme = createTheme({
       fontSize: "0.5rem",
       fontWeight: 200,
       letterSpacing: "0.5rem",
-      textAlign: "center",
     },
   },
   components: {
