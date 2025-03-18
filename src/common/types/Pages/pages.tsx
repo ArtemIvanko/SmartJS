@@ -11,6 +11,7 @@ import { DataTypes } from "@/pages/DataTypes";
 import { Integration_APC } from "@/pages/Integration_APC";
 import { TypeConversion } from "@/pages/TypeConversion";
 import { Operators } from "@/pages/Operators";
+import { Comparisons } from "@/pages/Comparisons";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -25,7 +26,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#alert-prompt-confirm": () => <Integration_APC />,
   "#type-conversions": () => <TypeConversion />,
   "#operators": () => <Operators />,
-  "#comparison": () => <div>Comparisons</div>,
+  "#comparison": () => <Comparisons />,
   "#ifelse": () => <div>If Else</div>,
   "#logical-operators": () => <div>Logical Operators</div>,
   "#nullish-coalescing-operator": () => <div>Nullish Coalescing Operator</div>,
