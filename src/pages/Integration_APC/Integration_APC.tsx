@@ -6,50 +6,36 @@ export const Integration_APC = () => (
   <StyledGlobalPage>
     <div>
       <Typography variant="h3">Interaction: alert, prompt, confirm</Typography>
-      <Typography>
-        As we’ll be using the browser as our demo environment, let’s see a
-        couple of functions to interact with the user:{" "}
-        <Highlight>alert</Highlight>, <Highlight>prompt</Highlight> and
-        <Highlight>confirm</Highlight>.
-      </Typography>
+      As we’ll be using the browser as our demo environment, let’s see a couple
+      of functions to interact with the user: <Highlight>alert</Highlight>,{" "}
+      <Highlight>prompt</Highlight> and
+      <Highlight>confirm</Highlight>.
     </div>
     <div>
       <Typography variant="h4">alert</Typography>
-      <Typography>
-        This one we’ve seen already. It shows a message and waits for the user
-        to press “OK”. For example:
-      </Typography>
+      This one we’ve seen already. It shows a message and waits for the user to
+      press “OK”. For example:
       <IDEEmitter code="" />
-      <Typography>
-        The mini-window with the message is called a modal window. The word
-        “modal” means that the visitor can’t interact with the rest of the page,
-        press other buttons, etc, until they have dealt with the window. In this
-        case – until they press “OK”.
-      </Typography>
+      The mini-window with the message is called a modal window. The word
+      “modal” means that the visitor can’t interact with the rest of the page,
+      press other buttons, etc, until they have dealt with the window. In this
+      case – until they press “OK”.
     </div>
     <div>
       <Typography variant="h4">prompt</Typography>
-      <Typography>
-        The function <Highlight>prompt</Highlight> shows a modal window with a
-        text message, an input field for the visitor, and the buttons OK/Cancel.
-        Here’s an example:
-      </Typography>
+      The function <Highlight>prompt</Highlight> shows a modal window with a
+      text message, an input field for the visitor, and the buttons OK/Cancel.
+      Here’s an example:
       <IDEEmitter code="" />
-      <Typography>
-        It shows a modal window with a text message, an input field for the
-        visitor, and the buttons OK/Cancel. <Highlight>title</Highlight> The
-        text to show the visitor.
-        <Highlight>default</Highlight> An optional second parameter, the initial
-        value for the input field.
-      </Typography>
-    </div>
-    <div>
+      It shows a modal window with a text message, an input field for the
+      visitor, and the buttons OK/Cancel. <Highlight>title</Highlight> The text
+      to show the visitor.
+      <Highlight>default</Highlight> An optional second parameter, the initial
+      value for the input field.
       <InfoBox
         title="The square brackets in syntax [...]"
         content="The square brackets around default in the syntax above denote that the parameter is optional, not required."
       />
-    </div>
-    <div>
       <Typography>
         The visitor can type something in the prompt input field and press OK.
         Then we get that text in the <Highlight>result</Highlight>. Or they can
@@ -83,27 +69,21 @@ export const Integration_APC = () => (
     </div>
     <div>
       <Typography variant="h4">confirm</Typography>
-      <Typography>
-        The function <Highlight>confirm</Highlight> shows a modal window with a
-        question and two buttons: OK and Cancel. The result is true if OK is
-        pressed and false otherwise. For example:
-      </Typography>
+      The function <Highlight>confirm</Highlight> shows a modal window with a
+      question and two buttons: OK and Cancel. The result is true if OK is
+      pressed and false otherwise. For example:
       <IDEEmitter code="" />
-      <Typography>
-        The call to <Highlight>confirm</Highlight> returns true if the visitor
-        clicks “OK” and false if they click “Cancel”.
-      </Typography>
+      The call to <Highlight>confirm</Highlight> returns true if the visitor
+      clicks “OK” and false if they click “Cancel”.
     </div>
     <div>
       <Typography variant="h4">
         Summary: interaction: alert, prompt, confirm
       </Typography>
-      <Typography>
-        The <Highlight>alert</Highlight>, <Highlight>prompt</Highlight> and{" "}
-        <Highlight>confirm</Highlight> functions allow us to interact with the
-        user. They are modal, meaning that they block the execution of the
-        script until the user closes them.
-      </Typography>
+      The <Highlight>alert</Highlight>, <Highlight>prompt</Highlight> and{" "}
+      <Highlight>confirm</Highlight> functions allow us to interact with the
+      user. They are modal, meaning that they block the execution of the script
+      until the user closes them.
     </div>
   </StyledGlobalPage>
 );
