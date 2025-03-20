@@ -6,66 +6,43 @@ export const Structure = () => (
   <StyledGlobalPage>
     <div>
       <Typography variant="h3">Code structure</Typography>
-      <Typography>
-        The first thing we’ll study is the building blocks of code.
-      </Typography>
+      The first thing we’ll study is the building blocks of code.
     </div>
     <div>
       <Typography variant="h4">Statements</Typography>
-      <Typography>
-        Statements are syntax constructs and commands that perform actions.
-      </Typography>
-      <Typography>
-        We’ve already seen a statement,{" "}
-        <Highlight>alert('Hello, world!')</Highlight>, which shows the message
-        “Hello, world!”. We can have as many statements in our code as we want.
-        Statements can be separated with a semicolon. For example, here we split
-        “Hello World” into two alerts:
-      </Typography>
+      Statements are syntax constructs and commands that perform actions. We’ve
+      already seen a statement, <Highlight>alert('Hello, world!')</Highlight>,
+      which shows the message “Hello, world!”. We can have as many statements in
+      our code as we want. Statements can be separated with a semicolon. For
+      example, here we split “Hello World” into two alerts:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>
-        Usually, statements are written on separate lines to make the code more
-        readable:
-      </Typography>
+      Usually, statements are written on separate lines to make the code more
+      readable:
       <IDEEmitter code="" />
     </div>
     <div>
       <Typography variant="h4">Semicolons</Typography>
-      <Typography>
-        A semicolon may be omitted in most cases when a line break exists. This
-        would also work:
-      </Typography>
+      A semicolon may be omitted in most cases when a line break exists. This
+      would also work:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>
-        Here, JavaScript interprets the line break as an “implicit” semicolon.
-        This is called an automatic semicolon insertion.{" "}
-        <strong>
-          In most cases, a newline implies a semicolon. But “in most cases” does
-          not mean “always”!
-        </strong>{" "}
-        There are cases when a newline does not mean a semicolon. For example:
-      </Typography>
+      Here, JavaScript interprets the line break as an “implicit” semicolon.
+      This is called an automatic semicolon insertion.{" "}
+      <strong>
+        In most cases, a newline implies a semicolon. But “in most cases” does
+        not mean “always”!
+      </strong>{" "}
+      There are cases when a newline does not mean a semicolon. For example:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>
-        The code outputs <Highlight>6</Highlight> because JavaScript does not
-        insert semicolons here. It is intuitively obvious that if the line ends
-        with a plus <Highlight>"+"</Highlight>, then it is an “incomplete
-        expression”, so a semicolon there would be incorrect. And in this case,
-        that works as intended.{" "}
-        <strong>
-          But there are situations where JavaScript “fails” to assume a
-          semicolon where it is really needed.
-        </strong>{" "}
-        Errors which occur in such cases are quite hard to find and fix.
-      </Typography>
-    </div>
-    <div>
+      The code outputs <Highlight>6</Highlight> because JavaScript does not
+      insert semicolons here. It is intuitively obvious that if the line ends
+      with a plus <Highlight>"+"</Highlight>, then it is an “incomplete
+      expression”, so a semicolon there would be incorrect. And in this case,
+      that works as intended.{" "}
+      <strong>
+        But there are situations where JavaScript “fails” to assume a semicolon
+        where it is really needed.
+      </strong>{" "}
+      Errors which occur in such cases are quite hard to find and fix.
       <InfoBox
         title="An example of an error"
         content={
@@ -103,56 +80,38 @@ export const Structure = () => (
           </>
         }
       />
-    </div>
-    <div>
-      <Typography>
-        We recommend putting semicolons between statements even if they are
-        separated by newlines. This rule is widely adopted by the community.
-        Let’s note once again – it is possible to leave out semicolons most of
-        the time. But it’s safer – especially for a beginner – to use them.
-      </Typography>
+      We recommend putting semicolons between statements even if they are
+      separated by newlines. This rule is widely adopted by the community. Let’s
+      note once again – it is possible to leave out semicolons most of the time.
+      But it’s safer – especially for a beginner – to use them.
     </div>
     <div>
       <Typography variant="h4">Comments</Typography>
-      <Typography>
-        As time goes on, programs become more and more complex. It becomes
-        necessary to add comments which describe what the code does and why.
-        Comments can be put into any place of a script. They don’t affect its
-        execution because the engine simply ignores them.{" "}
-        <strong>
-          One-line comments start with two forward slash characters{" "}
-        </strong>
-        <Highlight>//</Highlight>. The rest of the line is a comment. It may
-        occupy a full line of its own or follow a statement. Like here:
-      </Typography>
+      As time goes on, programs become more and more complex. It becomes
+      necessary to add comments which describe what the code does and why.
+      Comments can be put into any place of a script. They don’t affect its
+      execution because the engine simply ignores them.{" "}
+      <strong>
+        One-line comments start with two forward slash characters{" "}
+      </strong>
+      <Highlight>//</Highlight>. The rest of the line is a comment. It may
+      occupy a full line of its own or follow a statement. Like here:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>
-        <strong>
-          Multiline comments start with a forward slash and an asterisk{" "}
-          <Highlight>/*</Highlight> and end with an asterisk and a forward slash{" "}
-          <Highlight>*/</Highlight>.
-        </strong>
-        Like this:
-      </Typography>
+      <strong>
+        Multiline comments start with a forward slash and an asterisk{" "}
+        <Highlight>/*</Highlight> and end with an asterisk and a forward slash{" "}
+        <Highlight>*/</Highlight>.
+      </strong>
+      Like this:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>
-        The content of comments is ignored, so if we put code inside{" "}
-        <Highlight>/* … */</Highlight>, it won’t execute. Sometimes it can be
-        handy to temporarily disable a part of code:
-      </Typography>
+      The content of comments is ignored, so if we put code inside{" "}
+      <Highlight>/* … */</Highlight>, it won’t execute. Sometimes it can be
+      handy to temporarily disable a part of code:
       <IDEEmitter code="" />
-    </div>
-    <div>
       <InfoBox
         title="Use hotkeys!"
         content="In most editors, a line of code can be commented out by pressing the Ctrl+/ hotkey for a single-line comment and something like Ctrl+Shift+/ – for multiline comments (select a piece of code and press the hotkey). For Mac, try Cmd instead of Ctrl and Option instead of Shift."
       />
-    </div>
-    <div>
       <InfoBox
         title="Nested comments are not supported!"
         content={
@@ -166,17 +125,13 @@ export const Structure = () => (
         }
         isImportant
       />
-    </div>
-    <div>
-      <Typography>Please, don’t hesitate to comment your code.</Typography>
-      <Typography>
-        Comments increase the overall code footprint, but that’s not a problem
-        at all. There are many tools which minify code before publishing to a
-        production server. They remove comments, so they don’t appear in the
-        working scripts. Therefore, comments do not have negative effects on
-        production at all. Later in the tutorial there will be a chapter Code
-        quality that also explains how to write better comments.
-      </Typography>
+      Please, don’t hesitate to comment your code. Comments increase the overall
+      code footprint, but that’s not a problem at all. There are many tools
+      which minify code before publishing to a production server. They remove
+      comments, so they don’t appear in the working scripts. Therefore, comments
+      do not have negative effects on production at all. Later in the tutorial
+      there will be a chapter Code quality that also explains how to write
+      better comments.
     </div>
   </StyledGlobalPage>
 );
