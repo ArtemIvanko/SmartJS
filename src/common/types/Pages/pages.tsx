@@ -12,6 +12,7 @@ import { Integration_APC } from "@/pages/Integration_APC";
 import { TypeConversion } from "@/pages/TypeConversion";
 import { Operators } from "@/pages/Operators";
 import { Comparisons } from "@/pages/Comparisons";
+import { IfElse } from "@/pages/IfElse";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -27,7 +28,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#type-conversions": () => <TypeConversion />,
   "#operators": () => <Operators />,
   "#comparison": () => <Comparisons />,
-  "#ifelse": () => <div>If Else</div>,
+  "#ifelse": () => <IfElse />,
   "#logical-operators": () => <div>Logical Operators</div>,
   "#nullish-coalescing-operator": () => <div>Nullish Coalescing Operator</div>,
   "#while-for": () => <div>While and For Loops</div>,
