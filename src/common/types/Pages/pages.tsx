@@ -13,6 +13,7 @@ import { TypeConversion } from "@/pages/TypeConversion";
 import { Operators } from "@/pages/Operators";
 import { Comparisons } from "@/pages/Comparisons";
 import { IfElse } from "@/pages/IfElse";
+import { LogicalOperators } from "@/pages/LogicalOperators";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
