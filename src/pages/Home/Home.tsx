@@ -37,15 +37,11 @@ export const Home = () => {
     <div>
       {isValidHash && Pages[location.hash] ? (
         <>
-          <NavButton onClick={() => handleNav("prev")} $direction="prev">
-            {"<"}
-          </NavButton>
+          <NavButton onClick={() => handleNav("prev")} $direction="prev" />
           <Root>
             {Pages[location.hash]()}
           </Root>
-          <NavButton onClick={() => handleNav("next")} $direction="next">
-            {">"}
-          </NavButton>
+          <NavButton onClick={() => handleNav("next")} $direction="next" />
         </>
       ) : (
         <TopicsList />
