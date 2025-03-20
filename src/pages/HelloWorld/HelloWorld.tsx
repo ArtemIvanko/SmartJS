@@ -6,109 +6,74 @@ export const HelloWorld = () => (
   <StyledGlobalPage>
     <div>
       <Typography variant="h3">Hello, World!</Typography>
-      <Typography variant="body1">
-        This part of the tutorial is about core JavaScript, the language itself.
-        But we need a working environment to run our scripts and, since this
-        book is online, the browser is a good choice. We’ll keep the amount of
-        browser-specific commands (like alert) to a minimum so that you don’t
-        spend time on them if you plan to concentrate on another environment
-        (like Node.js). We’ll focus on JavaScript in the browser in the next
-        part of the tutorial. So first, let’s see how we attach a script to a
-        webpage. For server-side environments (like Node.js), you can execute
-        the script with a command like <Highlight>"node my.js"</Highlight>.
-      </Typography>
+      This part of the tutorial is about core JavaScript, the language itself.
+      But we need a working environment to run our scripts and, since this book
+      is online, the browser is a good choice. We’ll keep the amount of
+      browser-specific commands (like alert) to a minimum so that you don’t
+      spend time on them if you plan to concentrate on another environment (like
+      Node.js). We’ll focus on JavaScript in the browser in the next part of the
+      tutorial. So first, let’s see how we attach a script to a webpage. For
+      server-side environments (like Node.js), you can execute the script with a
+      command like <Highlight>"node my.js"</Highlight>.
     </div>
     <div>
       <Typography variant="h4">The "script" tag</Typography>
-      <Typography variant="body1">
-        To embed JavaScript into a webpage, you should use the script tag. It
-        can be placed in the <Highlight>{"<head>"}</Highlight> section, or
-        before the closing <Highlight>{"</body>"}</Highlight> tag. Like this:
-      </Typography>
+      To embed JavaScript into a webpage, you should use the script tag. It can
+      be placed in the <Highlight>{"<head>"}</Highlight> section, or before the
+      closing <Highlight>{"</body>"}</Highlight> tag. Like this:
       <IDEEmitter code="" />
     </div>
     <div>
       <Typography variant="h4">Modern markup</Typography>
-      <Typography>
-        The type attribute is not required. In modern HTML,{" "}
-        <Highlight>{"<script>"}</Highlight> without type have the JavaScript
-        MIME type by default.
-      </Typography>
-      <Typography>
-        The old HTML standard, HTML4, required a script to have a type. Usually
-        it was <Highlight>type="text/javascript"</Highlight>. It’s not required
-        anymore. Also, the modern HTML standard totally changed the meaning of
-        this attribute. Now, it can be used for JavaScript modules. But that’s
-        an advanced topic, we’ll talk about modules in another part of the
-        tutorial.
-      </Typography>
-    </div>
-    <div>
+      The type attribute is not required. In modern HTML,{" "}
+      <Highlight>{"<script>"}</Highlight> without type have the JavaScript MIME
+      type by default. The old HTML standard, HTML4, required a script to have a
+      type. Usually it was <Highlight>type="text/javascript"</Highlight>. It’s
+      not required anymore. Also, the modern HTML standard totally changed the
+      meaning of this attribute. Now, it can be used for JavaScript modules. But
+      that’s an advanced topic, we’ll talk about modules in another part of the
+      tutorial.
       <Typography>
         <strong>The language attribute: {"script language=…"}</strong>
       </Typography>
-      <Typography>
-        This attribute was meant to show the language of the script. This
-        attribute no longer makes sense because JavaScript is the default
-        language. There is no need to use it.
-      </Typography>
-    </div>
-    <div>
+      This attribute was meant to show the language of the script. This
+      attribute no longer makes sense because JavaScript is the default
+      language. There is no need to use it.
       <Typography>
         <strong>Comments before and after scripts.</strong>
       </Typography>
-      <Typography>
-        In really ancient books and guides, you may find comments inside{" "}
-        <Highlight>{"<script>"}</Highlight> tags, like this:
-      </Typography>
+      In really ancient books and guides, you may find comments inside{" "}
+      <Highlight>{"<script>"}</Highlight> tags, like this:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>
-        This trick isn’t used in modern JavaScript. These comments hide
-        JavaScript code from old browsers that didn’t know how to process the{" "}
-        <Highlight>{"<script>"}</Highlight> tag. Since browsers released in the
-        last 15 years don’t have this issue, this kind of comment can help you
-        identify really old code.
-      </Typography>
+      This trick isn’t used in modern JavaScript. These comments hide JavaScript
+      code from old browsers that didn’t know how to process the{" "}
+      <Highlight>{"<script>"}</Highlight> tag. Since browsers released in the
+      last 15 years don’t have this issue, this kind of comment can help you
+      identify really old code.
     </div>
     <div>
       <Typography variant="h4">External scripts</Typography>
-      <Typography>
-        For bigger scripts, it’s recommended to write the code in an external
-        script. The <Highlight>{"<script>"}</Highlight> tag has a src attribute,
-        the value of which is the path to the script file. Here’s an example:
-      </Typography>
-      <Typography>
-        Script files are attached to HTML with the <Highlight>src</Highlight>{" "}
-        attribute:
-      </Typography>
+      For bigger scripts, it’s recommended to write the code in an external
+      script. The <Highlight>{"<script>"}</Highlight> tag has a src attribute,
+      the value of which is the path to the script file. Here’s an example:
+      Script files are attached to HTML with the <Highlight>src</Highlight>{" "}
+      attribute:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>
-        Here, <Highlight>/path/to/script.js</Highlight> is an absolute path to
-        the script from the site root. One can also provide a relative path from
-        the current page. For instance, <Highlight>src="script.js"</Highlight>,
-        just like <Highlight>src="./script.js"</Highlight>, would mean a file
-        "script.js" in the current folder.
-      </Typography>
-      <Typography>We can give a full URL as well. For instance:</Typography>
+      Here, <Highlight>/path/to/script.js</Highlight> is an absolute path to the
+      script from the site root. One can also provide a relative path from the
+      current page. For instance, <Highlight>src="script.js"</Highlight>, just
+      like <Highlight>src="./script.js"</Highlight>, would mean a file
+      "script.js" in the current folder. We can give a full URL as well. For
+      instance:
       <IDEEmitter code="" />
-    </div>
-    <div>
-      <Typography>To attach several scripts, use multiple tags:</Typography>
+      To attach several scripts, use multiple tags:
       <IDEEmitter code="" />
-    </div>
-    <div>
       <InfoBox
         title="Please note:"
         content={
           "As a rule, only the simplest scripts are put into HTML. More complex ones reside in separate files. The benefit of a separate file is that the browser will download it and store it in its cache. Other pages that reference the same script will take it from the cache instead of downloading it, so the file is actually downloaded only once. That reduces traffic and makes pages faster."
         }
       />
-    </div>
-    <div>
       <InfoBox
         title="If src is set, the script content is ignored."
         content={
@@ -147,14 +112,12 @@ export const HelloWorld = () => (
           <Highlight>{"<script src='path/to/script.js'></script>"}</Highlight>.
         </li>
       </ul>
-      <Typography>
-        There is much more to learn about browser scripts and their interaction
-        with the webpage. But let’s keep in mind that this part of the tutorial
-        is devoted to the JavaScript language, so we shouldn’t distract
-        ourselves with browser-specific implementations of it. We’ll be using
-        the browser as a way to run JavaScript, which is very convenient for
-        online reading, but only one of many.
-      </Typography>
+      There is much more to learn about browser scripts and their interaction
+      with the webpage. But let’s keep in mind that this part of the tutorial is
+      devoted to the JavaScript language, so we shouldn’t distract ourselves
+      with browser-specific implementations of it. We’ll be using the browser as
+      a way to run JavaScript, which is very convenient for online reading, but
+      only one of many.
     </div>
   </StyledGlobalPage>
 );

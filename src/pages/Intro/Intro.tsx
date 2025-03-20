@@ -6,28 +6,22 @@ export const Intro = () => (
   <StyledGlobalPage>
     <div>
       <Typography variant="h3">An Introduction to JavaScript</Typography>
-      <Typography>
-        Let’s see what’s so special about JavaScript, what we can achieve with
-        it, and what other technologies play well with it.
-      </Typography>
+      Let’s see what’s so special about JavaScript, what we can achieve with it,
+      and what other technologies play well with it.
     </div>
     <div>
       <Typography variant="h4">What is JavaScript?</Typography>
-      <Typography>
-        JavaScript is a programming language that enables you to interact with
-        web pages. It is a language that is used to make web pages interactive.
-        It is a language that is used to make web pages interactive.
-      </Typography>
-    </div>
-    <InfoBox
-      title="Why is it called JavaScript?"
-      content={
-        "When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.\n" +
-        "\n" +
-        "But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all."
-      }
-    />
-    <div>
+      JavaScript is a programming language that enables you to interact with web
+      pages. It is a language that is used to make web pages interactive. It is
+      a language that is used to make web pages interactive.
+      <InfoBox
+        title="Why is it called JavaScript?"
+        content={
+          "When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.\n" +
+          "\n" +
+          "But as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all."
+        }
+      />
       <Typography>
         Today, JavaScript can execute not only in the browser, but also on the
         server, or actually on any device that has a special program called the
@@ -45,21 +39,14 @@ export const Intro = () => (
         <li>Nashorn – for Java 8.</li>
         <li>…and others.</li>
       </ul>
-      <Typography>
-        The terms above are good to remember because they are used in developer
-        articles on the internet. We’ll use them too. For instance, if “a
-        feature X is supported by V8”, then it probably works in Chrome, Opera
-        and Edge.
-      </Typography>
-    </div>
-    <div>
+      The terms above are good to remember because they are used in developer
+      articles on the internet. We’ll use them too. For instance, if “a feature
+      X is supported by V8”, then it probably works in Chrome, Opera and Edge.
       <InfoBox
         title="How do engines work?"
         content={
           <>
-            <Typography>
-              Engines are complicated. But the basics are easy.
-            </Typography>
+            Engines are complicated. But the basics are easy.
             <ul>
               <li>
                 The engine (embedded if it’s a browser) reads (“parses”) the
@@ -71,33 +58,24 @@ export const Intro = () => (
               </li>
               <li>And then the machine code runs, pretty fast.</li>
             </ul>
-            <Typography>
-              The engine applies optimizations at each step of the process. It
-              even watches the compiled script as it runs, analyzes the data
-              that flows through it, and applies optimizations to produce even
-              faster machine code.
-            </Typography>
+            The engine applies optimizations at each step of the process. It
+            even watches the compiled script as it runs, analyzes the data that
+            flows through it, and applies optimizations to produce even faster
+            machine code.
           </>
         }
       />
     </div>
     <div>
       <Typography variant="h4">What can in-browser JavaScript do?</Typography>
-      <Typography>
-        Modern JavaScript is a “safe” programming language. It does not provide
-        low-level access to memory or CPU, because it was initially created for
-        browsers which do not require it.
-      </Typography>
-      <Typography>
-        JavaScript’s capabilities greatly depend on the environment it’s running
-        in. For instance, Node.js supports functions that allow JavaScript to
-        read/write arbitrary files, perform network requests, etc.
-      </Typography>
-      <Typography>
-        In-browser JavaScript can do everything related to webpage manipulation,
-        interaction with the user, and the webserver. For instance, in the
-        browser:
-      </Typography>
+      Modern JavaScript is a “safe” programming language. It does not provide
+      low-level access to memory or CPU, because it was initially created for
+      browsers which do not require it. JavaScript’s capabilities greatly depend
+      on the environment it’s running in. For instance, Node.js supports
+      functions that allow JavaScript to read/write arbitrary files, perform
+      network requests, etc. In-browser JavaScript can do everything related to
+      webpage manipulation, interaction with the user, and the webserver. For
+      instance, in the browser:
       <ul>
         <li>
           Add new HTML to the page, change the existing content, modify styles.
@@ -112,15 +90,10 @@ export const Intro = () => (
     </div>
     <div>
       <Typography variant="h4">What JavaScript can’t do?</Typography>
-      <Typography>
-        There are many things that JavaScript can’t do. For instance, it cannot
-        operate with files on the server, accept connections, etc.
-      </Typography>
-      <Typography>
-        That’s a safety restriction. Imagine that you visit a website that can
-        read files on your computer. That would be a disaster. Examples of such
-        restrictions include:
-      </Typography>
+      There are many things that JavaScript can’t do. For instance, it cannot
+      operate with files on the server, accept connections, etc. That’s a safety
+      restriction. Imagine that you visit a website that can read files on your
+      computer. That would be a disaster. Examples of such restrictions include:
       <ul>
         <li>
           JavaScript on a webpage may not read/write arbitrary files on the hard
@@ -160,42 +133,33 @@ export const Intro = () => (
           alt="What JavaScript can't do"
         />
       </ul>
-      <Typography>
-        Such limitations do not exist if JavaScript is used outside of the
-        browser, for example on a server. Modern browsers also allow
-        plugins/extensions which may ask for extended permissions.
-      </Typography>
+      Such limitations do not exist if JavaScript is used outside of the
+      browser, for example on a server. Modern browsers also allow
+      plugins/extensions which may ask for extended permissions.
     </div>
     <div>
       <Typography variant="h4">What makes JavaScript unique?</Typography>
-      <Typography>
-        JavaScript is the only browser technology that combines these three
-        features:
-      </Typography>
+      JavaScript is the only browser technology that combines these three
+      features:
       <ul>
         <li>Full integration with HTML/CSS.</li>
         <li>Simple things are done simply.</li>
         <li>Support by all major browsers and enabled by default.</li>
       </ul>
-      <Typography>
-        JavaScript is the only browser technology that combines these three
-        things. That’s what makes JavaScript unique. That’s why it’s the most
-        widespread tool for creating browser interfaces. That said, JavaScript
-        can be used to create servers, mobile applications, etc.
-      </Typography>
+      JavaScript is the only browser technology that combines these three
+      things. That’s what makes JavaScript unique. That’s why it’s the most
+      widespread tool for creating browser interfaces. That said, JavaScript can
+      be used to create servers, mobile applications, etc.
     </div>
     <div>
       <Typography variant="h4">Languages “over” JavaScript</Typography>
-      <Typography>
-        The syntax of JavaScript does not suit everyone’s needs. Different
-        people want different features. That’s to be expected, because projects
-        and requirements are different for everyone. So, recently a plethora of
-        new languages appeared, which are transpiled (converted) to JavaScript
-        before they run in the browser. Modern tools make the transpilation very
-        fast and transparent, actually allowing developers to code in another
-        language and auto-converting it “under the hood”. Examples of such
-        languages:
-      </Typography>
+      The syntax of JavaScript does not suit everyone’s needs. Different people
+      want different features. That’s to be expected, because projects and
+      requirements are different for everyone. So, recently a plethora of new
+      languages appeared, which are transpiled (converted) to JavaScript before
+      they run in the browser. Modern tools make the transpilation very fast and
+      transparent, actually allowing developers to code in another language and
+      auto-converting it “under the hood”. Examples of such languages:
       <ul>
         <li>
           <strong>CoffeeScript</strong> – a language that fixes many of
@@ -216,37 +180,24 @@ export const Intro = () => (
           <strong>And many others</strong>.
         </li>
       </ul>
-      <Typography>
-        We’ll cover some of these languages in the tutorial. But for now, let’s
-        focus on JavaScript itself.
-      </Typography>
+      We’ll cover some of these languages in the tutorial. But for now, let’s
+      focus on JavaScript itself.
     </div>
     <div>
       <Typography variant="h4">Summary</Typography>
-      <Typography>
-        JavaScript is a language that is used to make web pages interactive. It
-        can execute not only in the browser, but also on the server, or actually
-        on any device that has a special program called the JavaScript engine.
-      </Typography>
-      <Typography>
-        In-browser JavaScript can do everything related to webpage manipulation,
-        interaction with the user, and the webserver.
-      </Typography>
-      <Typography>
-        Modern JavaScript is a “safe” programming language. It does not provide
-        low-level access to memory or CPU, because it was initially created for
-        browsers which do not require it.
-      </Typography>
-      <Typography>
-        JavaScript’s capabilities greatly depend on the environment it’s running
-        in. For instance, Node.js supports functions that allow JavaScript to
-        read/write arbitrary files, perform network requests, etc.
-      </Typography>
-      <Typography>
-        JavaScript is the only browser technology that combines these three
-        features: full integration with HTML/CSS, simple things are done simply,
-        and support by all major browsers and enabled by default.
-      </Typography>
+      JavaScript is a language that is used to make web pages interactive. It
+      can execute not only in the browser, but also on the server, or actually
+      on any device that has a special program called the JavaScript engine.
+      In-browser JavaScript can do everything related to webpage manipulation,
+      interaction with the user, and the webserver. Modern JavaScript is a
+      “safe” programming language. It does not provide low-level access to
+      memory or CPU, because it was initially created for browsers which do not
+      require it. JavaScript’s capabilities greatly depend on the environment
+      it’s running in. For instance, Node.js supports functions that allow
+      JavaScript to read/write arbitrary files, perform network requests, etc.
+      JavaScript is the only browser technology that combines these three
+      features: full integration with HTML/CSS, simple things are done simply,
+      and support by all major browsers and enabled by default.
     </div>
   </StyledGlobalPage>
 );
