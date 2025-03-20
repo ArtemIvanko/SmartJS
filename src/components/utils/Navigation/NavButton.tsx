@@ -1,5 +1,5 @@
 import styled from "@/DefaultTheme";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { ReactNode } from "react";
 
 interface NavButtonProps {
@@ -10,7 +10,9 @@ interface NavButtonProps {
 
 export const NavButton = ({ onClick, $direction }: NavButtonProps) => (
   <StyledButton onClick={onClick} $direction={$direction}>
-    {$direction === "prev" ? "<" : ">"}
+    <Typography variant="caption" sx={{ writingMode: "vertical-rl" }}>
+      {$direction === "prev" ? "Previous" : "Next"}
+    </Typography>
   </StyledButton>
 );
 
@@ -19,7 +21,8 @@ const StyledButton = styled(Button)<{ $direction: "prev" | "next" }>(
     position: "fixed",
     top: "50%",
     zIndex: 1000,
-    fontSize: "4rem",
+    fontSize: "3rem",
     right: $direction === "next" ? "0" : "auto",
+    width: "50px",
   }),
 );
