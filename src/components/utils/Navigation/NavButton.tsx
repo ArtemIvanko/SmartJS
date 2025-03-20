@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 interface NavButtonProps {
   onClick: () => void;
   $direction: "prev" | "next";
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const NavButton = ({ onClick, $direction }: NavButtonProps) => (
