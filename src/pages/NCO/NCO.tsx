@@ -2,10 +2,10 @@ import { Highlight, IDEEmitter, StyledGlobalPage } from "@shared/utils";
 import { Typography } from "@mui/material";
 import { InfoBox } from "@utils/InfoBox/InfoBox";
 
-export const LogicalOperators = () => (
+export const NCO = () => (
   <StyledGlobalPage>
     <div>
-      <Typography variant="h3">Logical Operators</Typography>
+      <Typography variant="h3">Nullish coalescing operator '??'</Typography>
       <InfoBox
         title="A recent addition"
         content="This is a recent addition to the language. Old browsers may need polyfills."

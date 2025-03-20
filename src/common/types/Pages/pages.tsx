@@ -13,7 +13,7 @@ import { TypeConversion } from "@/pages/TypeConversion";
 import { Operators } from "@/pages/Operators";
 import { Comparisons } from "@/pages/Comparisons";
 import { IfElse } from "@/pages/IfElse";
-import { LogicalOperators } from "@/pages/LogicalOperators";
+import { NCO } from "@/pages/NCO/NCO";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -31,7 +31,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#comparison": () => <Comparisons />,
   "#ifelse": () => <IfElse />,
   "#logical-operators": () => <div>Logical Operators</div>,
-  "#nullish-coalescing-operator": () => <div>Nullish Coalescing Operator</div>,
+  "#nullish-coalescing-operator": () => <NCO />,
   "#while-for": () => <div>While and For Loops</div>,
   "#switch": () => <div>Switch</div>,
   "#function-basics": () => <div>Functions</div>,
