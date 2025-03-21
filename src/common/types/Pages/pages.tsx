@@ -17,6 +17,7 @@ import { NCO } from "@/pages/NCO/NCO";
 import { LogicalOperators } from "@/pages/LogicalOperators";
 import { Loops } from "@/pages/Loops";
 import { Switch } from "@/pages/Switch";
+import { Functions } from "@/pages/Functions";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -37,7 +38,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#nullish-coalescing-operator": () => <NCO />,
   "#while-for": () => <Loops />,
   "#switch": () => <Switch />,
-  "#function-basics": () => <div>Functions</div>,
+  "#function-basics": () => <Functions />,
   "#function-expressions": () => <div>Function Expressions</div>,
   "#arrow-functions-basics": () => <div>Arrow Functions</div>,
   "#javascript-specials": () => <div>JavaScript Specials</div>,
