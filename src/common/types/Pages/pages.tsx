@@ -1,24 +1,28 @@
 import { ReactNode } from "react";
-import { Intro } from "@/pages/Intro";
-import { Manuals } from "@/pages/Manuals";
-import { CodeEditors } from "@/pages/CodeEditors";
-import { DevConsole } from "@/pages/DevConsole";
-import { HelloWorld } from "@/pages/HelloWorld";
-import { Structure } from "@/pages/Structure";
-import { StrictMode } from "@/pages/StrictMode";
-import { Variables } from "@/pages/Variables";
-import { DataTypes } from "@/pages/DataTypes";
-import { Integration_APC } from "@/pages/Integration_APC";
-import { TypeConversion } from "@/pages/TypeConversion";
-import { Operators } from "@/pages/Operators";
-import { Comparisons } from "@/pages/Comparisons";
-import { IfElse } from "@/pages/IfElse";
-import { NCO } from "@/pages/NCO/NCO";
-import { LogicalOperators } from "@/pages/LogicalOperators";
-import { Loops } from "@/pages/Loops";
-import { Switch } from "@/pages/Switch";
-import { Arrows, Expressions, Functions } from "@/pages/Functions";
-import { Specials } from "@/pages/Specials";
+import {
+  Arrows,
+  CodeEditors,
+  Comparisons,
+  DataTypes,
+  DevConsole,
+  Expressions,
+  Functions,
+  HelloWorld,
+  IfElse,
+  Integration_APC,
+  Intro,
+  LogicalOperators,
+  Loops,
+  Manuals,
+  NCO,
+  Operators,
+  Specials,
+  StrictMode,
+  Structure,
+  Switch,
+  TypeConversion,
+  Variables,
+} from "@/pages";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,

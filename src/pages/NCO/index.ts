@@ -1,1 +1,1 @@
-export * from "src/pages/NCO";
+export * from "./NCO";
