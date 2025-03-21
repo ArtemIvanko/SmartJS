@@ -18,6 +18,7 @@ import { LogicalOperators } from "@/pages/LogicalOperators";
 import { Loops } from "@/pages/Loops";
 import { Switch } from "@/pages/Switch";
 import { Arrows, Expressions, Functions } from "@/pages/Functions";
+import { Specials } from "@/pages/Specials";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -41,7 +42,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#function-basics": () => <Functions />,
   "#function-expressions": () => <Expressions />,
   "#arrow-functions-basics": () => <Arrows />,
-  "#javascript-specials": () => <div>JavaScript Specials</div>,
+  "#javascript-specials": () => <Specials />,
   "#debugging": () => <div>Debugging in Chrome</div>,
   "#coding-style": () => <div>Coding Style</div>,
   "#comments": () => <div>Comments</div>,
