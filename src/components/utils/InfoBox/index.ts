@@ -1,1 +1,1 @@
-export * from "@utils/InfoBox/index";
+export * from "@utils/InfoBox";
