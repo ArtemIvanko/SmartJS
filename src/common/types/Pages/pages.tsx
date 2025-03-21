@@ -17,7 +17,7 @@ import { NCO } from "@/pages/NCO/NCO";
 import { LogicalOperators } from "@/pages/LogicalOperators";
 import { Loops } from "@/pages/Loops";
 import { Switch } from "@/pages/Switch";
-import { Functions } from "@/pages/Functions";
+import { Expressions, Functions } from "@/pages/Functions";
 
 export const Pages: Record<string, () => ReactNode> = {
   "#intro": () => <Intro />,
@@ -39,7 +39,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#while-for": () => <Loops />,
   "#switch": () => <Switch />,
   "#function-basics": () => <Functions />,
-  "#function-expressions": () => <div>Function Expressions</div>,
+  "#function-expressions": () => <Expressions />,
   "#arrow-functions-basics": () => <div>Arrow Functions</div>,
   "#javascript-specials": () => <div>JavaScript Specials</div>,
   "#debugging": () => <div>Debugging in Chrome</div>,
