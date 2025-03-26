@@ -19,3 +19,4 @@ export * from "./TypeConversion";
 export * from "./Variables";
 export * from "./Structure";
 export * from "./Operators";
+export * from "./Debugging";
