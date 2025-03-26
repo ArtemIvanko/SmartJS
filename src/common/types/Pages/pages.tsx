@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import {
   Arrows,
   CodeEditors,
+  CodeStyle,
   Comparisons,
   DataTypes,
   Debugging,
@@ -49,7 +50,7 @@ export const Pages: Record<string, () => ReactNode> = {
   "#arrow-functions-basics": () => <Arrows />,
   "#javascript-specials": () => <Specials />,
   "#debugging": () => <Debugging />,
-  "#coding-style": () => <div>Coding Style</div>,
+  "#coding-style": () => <CodeStyle />,
   "#comments": () => <div>Comments</div>,
   "#ninja-code": () => <div>Ninja Code</div>,
   "#testing-mocha": () => <div>Testing</div>,
