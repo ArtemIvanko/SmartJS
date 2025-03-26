@@ -21,3 +21,4 @@ export * from "./Structure";
 export * from "./Operators";
 export * from "./Debugging";
 export * from "./CodeStyle";
+export * from "./Comments";
