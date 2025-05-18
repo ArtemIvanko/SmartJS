@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { TopicsList } from "@shared/TopicsList";
 import { SECTIONS } from "@/common/types";
 import { Pages } from "@/common/types/Pages/pages";
+import { WebConsole } from "@/pages/WebConsole/WebConsole";
 import styled from "@/DefaultTheme";
 import { useCallback, useState } from "react";
 import { NavButton } from "@shared/utils";
@@ -39,6 +40,7 @@ export const Home = () => {
         <>
           <NavButton onClick={() => handleNav("prev")} $direction="prev" />
           <Root>
+            <WebConsole />
             {Pages[location.hash]()}
           </Root>
           <NavButton onClick={() => handleNav("next")} $direction="next" />
